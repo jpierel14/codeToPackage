@@ -25,7 +25,7 @@ PACKAGE_NAME is being developed `on github
 version using ``git``::
 
     git clone GIT_REPOSITORY
-    cd mkla
+    cd PACKAGE_NAME
 
 then::
 	

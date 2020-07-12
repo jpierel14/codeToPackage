@@ -30,7 +30,7 @@ codeToPackage is being developed `on github
 version using ``git``::
 
     git clone https://github.com/jpierel14/codeToPackage.git
-    cd mkla
+    cd codetopackage
 
 then::
 	
