@@ -18,9 +18,9 @@ class codetopackagetest(TestCommand):
 
 AUTHOR = 'Justin Pierel'
 AUTHOR_EMAIL = 'justin.pierel@gmail.com'
-VERSION = '0.0.1'
+VERSION = '1.0.0'
 LICENSE = ''
-URL = ''
+URL = 'https://codetopackage.readthedocs.io/en/latest/index.html'
 
 
 

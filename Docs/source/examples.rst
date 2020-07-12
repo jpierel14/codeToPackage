@@ -84,10 +84,28 @@ python script example by editing the ``_examples/plot_package.py`` file. Due to 
 code, this example script **must** start with ``plot_``, but otherwise you can rename the rest of the filename. If
 this file is edited, it will actually be run when readthedocs compiles your documentation, showing any plots 
 and generating downloadable ``.py`` and ``.ipynb`` files (as well as creating an examples folder with the jupyter notebook
-in your base directory).
+in your base directory). An example of this is shown on the main page of this documentation for reference. 
 
 
+Making your package Pip Installable
+===================================
 
+``codetopackage`` finishes with a package that is installable with the normal ``python setup.py install``, and is ready
+to be made pip installable. The only reason it isn't included, is because you need a PyPi account to make your package
+pip installable. So just create your package, make sure it is installable using ``python setup.py intall`, then create 
+a PyPi account here: `https://pypi.org/account/register/ <https://pypi.org/account/register/>`_. Make sure to confirm
+your e-mail address, then install the `twine package <https://pypi.org/project/twine/>`_, and run the following commands in your terminal
+(in your package main directory, where setup.py lives):
 
+.. code-block:: bash
+	
+	rm dist/*
+	python setup.py bdist_wheel
+    twine upload dist/*
+
+The first time you run this you'll likely get an error saying there is no such file as ``dist/*``, but then it will be created and
+each time you want to update your pip distribution you'll need to run these same 3 lines. You'll be prompted for your username
+and password, and then the package will upload to PyPi and be pip installable. **Every time you update your package with PyPi, you
+must increment your package version number in the setup.py file**.
 
 
