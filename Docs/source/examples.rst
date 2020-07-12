@@ -92,16 +92,16 @@ Making your package Pip Installable
 
 ``codetopackage`` finishes with a package that is installable with the normal ``python setup.py install``, and is ready
 to be made pip installable. The only reason it isn't included, is because you need a PyPi account to make your package
-pip installable. So just create your package, make sure it is installable using ``python setup.py intall`, then create 
+pip installable. So just create your package, make sure it is installable using ``python setup.py intall``, then create 
 a PyPi account here: `https://pypi.org/account/register/ <https://pypi.org/account/register/>`_. Make sure to confirm
 your e-mail address, then install the `twine package <https://pypi.org/project/twine/>`_, and run the following commands in your terminal
-(in your package main directory, where setup.py lives):
+(in your package main directory, where ``setup.py`` lives):
 
 .. code-block:: bash
 	
 	rm dist/*
 	python setup.py bdist_wheel
-    twine upload dist/*
+	twine upload dist/*
 
 The first time you run this you'll likely get an error saying there is no such file as ``dist/*``, but then it will be created and
 each time you want to update your pip distribution you'll need to run these same 3 lines. You'll be prompted for your username
