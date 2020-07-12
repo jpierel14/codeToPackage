@@ -3,14 +3,15 @@
 Basic Functionality
 ===================
 
-Basic usage of the codetopackage package.
+Just a docs implementation example.
 """
 		
 ###############################################################
 # This is just an example of what you can do with the 
-# documentation generated automatically by codetopacakge.
+# documentation generated automatically by codetopacakge. For an
+# example of how to actually implement codetopackage, see the 
+# :ref:`examples:Creating a Python Package` part of the docs.
    
-import codetopackage
 import matplotlib.pyplot as plt
 import numpy as np
 

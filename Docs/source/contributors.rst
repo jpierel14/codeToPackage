@@ -9,4 +9,4 @@ Primary Contributors
     :alt: alternate text
     :figclass: align-left
 
-    `Your git website here <https://github.com/jpierel14>`_
+    `Justin Pierel <https://github.com/jpierel14>`_
