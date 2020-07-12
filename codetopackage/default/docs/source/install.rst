@@ -20,7 +20,7 @@ Using pip::
 Install latest development version
 ==================================
 
-MKLA is being developed `on github
+PACKAGE_NAME is being developed `on github
 <https://github.com/PACKAGE_NAME>`_. To get the latest development
 version using ``git``::
 

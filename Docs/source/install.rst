@@ -25,7 +25,7 @@ Using pip::
 Install latest development version
 ==================================
 
-MKLA is being developed `on github
+codeToPackage is being developed `on github
 <https://github.com/codetopackage>`_. To get the latest development
 version using ``git``::
 
