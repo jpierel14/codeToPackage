@@ -5,7 +5,11 @@
 
 Welcome to codetopackage
 ========================
-
+This package was created to make it simpler to make your own installable
+Python package. It accepts a folder containing working standalone code and
+turns it into an installable package with a barebones documentation. This 
+should also work if you have multiple python files that import each other,
+and folders of data that are accessed by the code.
 
 .. toctree::
    :maxdepth: 1

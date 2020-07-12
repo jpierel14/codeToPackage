@@ -64,3 +64,30 @@ run this stage with the online repository brand new and empty (no readme, no .gi
 	    InitAsGit= True,
     	ConnectRemoteGitRepository= 'https://github.com/username/myPackageName.git'
 	    )
+
+Editing Documentation
+=====================
+
+The documentation created by ``codetopackage`` will be barebones, you can go back
+and improve it once it's created. You can create an account at readthedocs once your
+package is created, and import the github repository connected to your new package. 
+You should then be able to view this initial documentation. You can add a picture of
+yourself in the ``_static`` folder, and then edit the ``contributors.rst`` file to use
+your new picture and add your github page. You can edit the ``conf.py`` file to change your
+html favicon (the image appearing in the tab) by uncommenting this line in the ``conf.py``: 
+``#html_favicon = '_static/your_image_here.png'`` and replacing the png filename with an image of your choice.
+Similarly, you can add an image to the top of the index on the left of your documentation by 
+uncommenting this line ``#html_logo = "_static/mylogo.png"`` and replacing the logo image filename. 
+
+You can add a textual example (like this one) to your docs by editing the ``examples.rst`` file, or a working
+python script example by editing the ``_examples/plot_package.py`` file. Due to a known bug in the docs gallery
+code, this example script **must** start with ``plot_``, but otherwise you can rename the rest of the filename. If
+this file is edited, it will actually be run when readthedocs compiles your documentation, showing any plots 
+and generating downloadable ``.py`` and ``.ipynb`` files (as well as creating an examples folder with the jupyter notebook
+in your base directory).
+
+
+
+
+
+
