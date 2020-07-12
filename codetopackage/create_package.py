@@ -79,6 +79,7 @@ def create_package(
 	
 	Returns
 	-------
+	
 	"""
 	Result = None
 
@@ -175,9 +176,9 @@ def create_package(
 	SetupFileContents=SetupFileContents.replace('PACKAGE_INSTALL','{}'.format(ProjectPackageRemoteDependencies))
 	SetupFileContents=SetupFileContents.replace('PACKAGE_SETUP',PackageSetupPackages)
 	if len(ProjectDataFiles)>0:
-		SetupFileContents=SetupFileContents.replace('DATA_FOLDERS','{}'.format(list(numpy.append(PackageSetupPackages,'package_data'))))
+		SetupFileContents=SetupFileContents.replace('DATA_FOLDERS','{}'.format(list(numpy.append(PackageDataFolders,'package_data'))))
 	else:
-		SetupFileContents=SetupFileContents.replace('DATA_FOLDERS','{}'.format(PackageSetupPackages))
+		SetupFileContents=SetupFileContents.replace('DATA_FOLDERS','{}'.format(PackageDataFolders))
 
 	ModuleWriteResult = Library_FileWriteText(
 			Filepath = os.path.join(PackageTargetDirectory,'setup.py'),

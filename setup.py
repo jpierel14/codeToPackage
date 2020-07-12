@@ -36,7 +36,7 @@ PACKAGENAME='codetopackage'
 
 # Add the project-global data
 data_files = []
-for dataFolderName in ['numpy']:
+for dataFolderName in ['default']:
   pkgdatadir = os.path.join(PACKAGENAME, dataFolderName)
   data_files.extend(recursive_glob(pkgdatadir, '*'))
 
