@@ -6,4 +6,5 @@ scipy
 cffi
 astropy
 pytest-astropy
+matplotlib
 sphinx_gallery
