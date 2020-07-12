@@ -271,12 +271,13 @@ def create_package(
 		shutil.copyfile(os.path.join(__filedir__,'default','.readthedocs.yml'),os.path.join(PackageTargetDirectory,'.readthedocs.yml'))
 
 		pip_requirements=Library_FileReadAsText(os.path.join(PackageTargetDirectory,'Docs','source','requirements.txt'))
-		pip_requirements=pip_requirements.replace('SETUP_REQUIRES','\n'.join(PackageSetupPackages))
-		ModuleWriteResult = Library_FileWriteText(
-				Filepath = os.path.join(PackageTargetDirectory,'Docs','source','requirements.txt'),
-				WriteText = pip_requirements,
-				OverWrite = True,PrintExtra=PrintExtra
-				)
+		if isinstance(PackageSetupPackages,list):
+			pip_requirements=pip_requirements.replace('SETUP_REQUIRES','\n'.join(PackageSetupPackages))
+			ModuleWriteResult = Library_FileWriteText(
+					Filepath = os.path.join(PackageTargetDirectory,'Docs','source','requirements.txt'),
+					WriteText = pip_requirements,
+					OverWrite = True,PrintExtra=PrintExtra
+					)
 		pip_requirements2=Library_FileReadAsText(os.path.join(PackageTargetDirectory,'Docs','source','requirements2.txt'))
 		pip_requirements2=pip_requirements2.replace('INSTALL_REQUIRES','\n'.join(ProjectPackageRemoteDependencies))
 		ModuleWriteResult = Library_FileWriteText(
