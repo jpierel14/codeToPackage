@@ -79,7 +79,7 @@ def create_package(
 	
 	Returns
 	-------
-	
+
 	"""
 	Result = None
 
@@ -251,8 +251,10 @@ def create_package(
 		if not InitAsGit or len(ConnectRemoteGitRepository) == 0:
 			ind=DocsSourceInstall.find('Install latest development version')
 			DocsSourceInstall=DocsSourceInstall[:ind]
-		elif not PackageTests:
-			DocsSourceInstall=DocsSourceInstall.replace('python setup.py test\n','')
+		else:
+			DocsSourceInstall=DocsSourceInstall.replace('GIT_REPOSITORY',ConnectRemoteGitRepository)
+			if not PackageTests:
+				DocsSourceInstall=DocsSourceInstall.replace('python setup.py test\n','')
 			
 
 		ModuleWriteResult = Library_FileWriteText(

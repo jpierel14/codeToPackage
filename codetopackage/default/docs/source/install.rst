@@ -6,7 +6,6 @@ PACKAGE_NAME works on Python 3.5+ and requires the
 following Python packages:
 
 - `numpy <http://www.numpy.org/>`_
-- `scipy <http://www.scipy.org/>`_
 
 
 Install using pip

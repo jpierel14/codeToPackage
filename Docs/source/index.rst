@@ -18,7 +18,6 @@ Welcome to codetopackage
    :hidden:
    :titlesonly:
 
-   examples
    api
    contributors
 

@@ -7,6 +7,10 @@ following Python packages:
 
 - `numpy <http://www.numpy.org/>`_
 - `scipy <http://www.scipy.org/>`_
+- `sympy <http://www.sympy.org/>`_
+- `pprint <https://docs.python.org/3/library/pprint.html>`_
+- `cffi <https://cffi.readthedocs.io/en/latest/>`_
+- `astropy <http://www.astropy.org/>`_
 
 
 Install using pip
@@ -25,7 +29,7 @@ MKLA is being developed `on github
 <https://github.com/codetopackage>`_. To get the latest development
 version using ``git``::
 
-    git clone GIT_REPOSITORY
+    git clone https://github.com/jpierel14/codeToPackage.git
     cd mkla
 
 then::

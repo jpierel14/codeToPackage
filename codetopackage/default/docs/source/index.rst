@@ -18,7 +18,6 @@ EQUAL_SIGNS
    :hidden:
    :titlesonly:
 
-   examples
    api
    contributors
 
