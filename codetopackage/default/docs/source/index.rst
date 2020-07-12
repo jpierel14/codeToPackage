@@ -14,6 +14,8 @@ EQUAL_SIGNS
    install
    examples
 
+.. include:: examples/index.rst
+
 .. toctree::
    :hidden:
    :titlesonly:

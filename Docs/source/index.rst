@@ -18,6 +18,8 @@ and folders of data that are accessed by the code.
    install
    examples
 
+.. include:: examples/index.rst
+
 .. toctree::
    :hidden:
    :titlesonly:
