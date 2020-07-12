@@ -30,4 +30,4 @@ version using ``git``::
 then::
 	
 	python setup.py test
-    python setup.py install
+	python setup.py install
