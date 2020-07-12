@@ -1,0 +1,9 @@
+numpy
+sphinx_rtd_theme
+pprint
+sympy
+scipy
+cffi
+astropy
+pytest-astropy
+sphinx_gallery

@@ -1,0 +1,6 @@
+numpy
+n
+u
+m
+p
+y
