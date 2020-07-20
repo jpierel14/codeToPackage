@@ -12,7 +12,7 @@ Primary Contributors
     `Justin Pierel <https://github.com/jpierel14>`_
 
 
-.. figure:: _static/da_git.jpeg
+.. figure:: _static/da_git.png
     :width: 200px
     :align: center
     :height: 200px
