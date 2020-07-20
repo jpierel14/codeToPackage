@@ -10,3 +10,13 @@ Primary Contributors
     :figclass: align-left
 
     `Justin Pierel <https://github.com/jpierel14>`_
+
+
+.. figure:: _static/da_git.jpeg
+    :width: 200px
+    :align: center
+    :height: 200px
+    :alt: alternate text
+    :figclass: align-left
+
+    `Doug Adams <https://github.com/douglasquincyadams>`_

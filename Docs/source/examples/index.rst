@@ -11,7 +11,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Basic usage of the codetopackage package. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Just a docs implementation example. ">
 
 .. only:: html
 

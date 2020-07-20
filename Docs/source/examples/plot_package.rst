@@ -13,18 +13,30 @@
 Basic Functionality
 ===================
 
-Basic usage of the codetopackage package.
+Just a docs implementation example.
 
-Explain here what this example does
+This is just an example of what you can do with the 
+documentation generated automatically by codetopacakge. For an
+example of how to actually implement codetopackage, see the 
+:ref:`examples:Creating a Python Package` part of the docs.
 
 
 .. code-block:: default
 
    
-    import codetopackage
+    import matplotlib.pyplot as plt
+    import numpy as np
 
     print('Hello World!')
+    x=np.linspace(0,2*np.pi,1000)
+    y=np.sin(x)
+    plt.plot(x,y)
+    plt.xlabel('x',fontsize=16)
+    plt.ylabel('y',fontsize=16)
 
+
+.. image:: /examples/images/sphx_glr_plot_package_001.png
+    :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -35,13 +47,14 @@ Explain here what this example does
 
     Hello World!
 
+    Text(0, 0.5, 'y')
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.038 seconds)
+   **Total running time of the script:** ( 0 minutes  0.187 seconds)
 
 
 .. _sphx_glr_download_examples_plot_package.py:
