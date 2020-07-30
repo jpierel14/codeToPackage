@@ -27,7 +27,7 @@ def create_package(
 			CreateDocs=True,
 			InitAsGit= False,
 			ConnectRemoteGitRepository= '',
-			CheckArguments = True,
+			CheckArguments = False,
 			PrintExtra = False,
 			):
 	"""
@@ -212,7 +212,7 @@ def create_package(
 		ModuleWriteResult = Library_FileWriteText(
 				Filepath = os.path.join(PackageTargetDirectory,'Docs','source','index.rst'),
 				WriteText = DocsSourceIndex,
-				OverWrite = True
+				OverWrite = True,PrintExtra=PrintExtra
 				)
 
 		if len(IncludeInAPI)>0:
@@ -310,8 +310,8 @@ def create_package(
 
 	PackageInitFile=Library_FileReadAsText(os.path.join(__filedir__,'default','__init__.py'))
 	importString=''
-	for pythonFile in ProjectPackageLocalDependencies:
-		importString += 'from .%s import *\n'%pythonFile
+	for pythonFile in ProjectPythonFiles:
+		importString += 'from .%s import *\n'%os.path.splitext(os.path.basename(pythonFile))[0]
 	PackageInitFile=PackageInitFile.replace('IMPORT_LIST',importString)
 	if not PackageTests:
 		ind=PackageInitFile.find('def')
