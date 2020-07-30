@@ -38,12 +38,10 @@ def Library_StringFilePathGetDirectory(
     PrintExtra = False,
     ):
 
-    print('starting...')
 
     Result = None
 
     FilePath = os.path.realpath(FilePath)
-    print('FilePath', FilePath)
 
     if (CheckArguments):
         ArgumentErrorMessage = ""
@@ -52,9 +50,7 @@ def Library_StringFilePathGetDirectory(
             String = FilePath,  
             Substring = "\."
             )
-        print('FilePathPeriodIndexes', FilePathPeriodIndexes)
         FilePathPeriodCount = len(  FilePathPeriodIndexes )
-        print('FilePathPeriodCount', FilePathPeriodCount)
 
         if FilePathPeriodCount != 1 :
             ArgumentErrorMessage += 'Bad `FilePath` Arg.  FilePathPeriodCount is ' +  str(FilePathPeriodCount)+'\n' 
