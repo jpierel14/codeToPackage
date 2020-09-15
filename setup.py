@@ -18,7 +18,7 @@ class codetopackagetest(TestCommand):
 
 AUTHOR = 'Justin Pierel'
 AUTHOR_EMAIL = 'justin.pierel@gmail.com'
-VERSION = '1.0.3'
+VERSION = '1.0.4'
 LICENSE = ''
 URL = 'https://codetopackage.readthedocs.io/en/latest/index.html'
 
@@ -47,7 +47,7 @@ setup(
     name=PACKAGENAME,
     cmdclass={'test': codetopackagetest},
     setup_requires='numpy',
-    install_requires=['numpy', 'sphinx_rtd_theme', 'pprint', 'sympy', 'scipy', 'cffi', 'astropy', 'pytest-astropy'],
+    install_requires=['numpy', 'sphinx_rtd_theme', 'sympy', 'scipy', 'cffi', 'astropy', 'pytest-astropy'],
     packages=[PACKAGENAME],
     version=VERSION,
     author=AUTHOR,
